@@ -15,9 +15,10 @@ h1 {
   body {
     margin: 2em;
     background-image: url("img/fondo.gif");
+    
   }
   body, input[type="text"], button {
-    color: #333;
+    color: rgb(255, 123, 0);
     font-family: Cambria, Georgia;
   }
   /* everywhere else */
