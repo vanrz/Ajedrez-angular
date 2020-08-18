@@ -1,0 +1,33 @@
+<h2>{{jugador1.Jugador1 | uppercase}} </h2>
+<div><span>Turno: </span>{{jugador1.Turno}}</div>
+<div>
+    <label>
+        Nombre de jugador1:
+   <input [(ngModel)]="jugador1.Jugador1" placeholder="Jugador1">
+
+    </label>
+</div>
+
+<h2>{{jugador2.Jugador2 | uppercase}}</h2>
+<div><span>Turno: </span>{{jugador2.Turno}}</div>
+<div>
+    <label>
+        Nombre de Jugador 
+   <input [(ngModel)]="jugador2.Jugador2" placeholder="Jugador2">
+
+    </label>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="text-align: center">
+<table id="tabAje" width="50%">
+    <tr *ngFor= "let fila of filas">
+        <td *ngFor="let celda of fila" class= {{celda}} >
+
+        </td>
+    </tr>
+</table>
+</div>

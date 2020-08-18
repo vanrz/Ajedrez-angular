@@ -1,0 +1,20 @@
+.posicion1 {
+    width: 10%;
+    height: 50px;
+    background-color: white;
+    
+}
+
+.posicion2 {
+    width: 10%;
+    height: 50px;
+    background-color: rgb(70, 60, 60);
+}
+
+.posicion1, .posicion2{
+    display: -webkit-inline-box;
+}
+
+.torre{
+    background-image: url(img/torre.png);
+}
