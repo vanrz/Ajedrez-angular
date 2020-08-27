@@ -1,27 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 h1 {
-    color: #369;
+    color: rgb(148, 96, 96)77, 153, 230);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
-    text-align: center;
+    text-align:center;
   }
   h2, h3 {
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(22, 111, 170);
+    font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     text-align: left;
   }
   body {
     margin: 2em;
-    background-image: url("img/fondo.gif");
+    background-image: url("../img/cheessss.gif");
     
   }
   body, input[type="text"], button {
-    color: rgb(255, 123, 0);
-    font-family: Cambria, Georgia;
+    color: rgb(255, 102, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
   }
   /* everywhere else */
-  * {
-    font-family: Arial, Helvetica, sans-serif;
+  footer{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgba(162, 0, 255, 0.678);
+    text-align:right;
+  }
+  *{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }

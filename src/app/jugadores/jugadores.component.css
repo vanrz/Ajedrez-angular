@@ -13,8 +13,8 @@
 
 .posicion1, .posicion2{
     display: -webkit-inline-box;
+    
+    
 }
 
-.torre{
-    background-image: url(img/torre.png);
-}
+

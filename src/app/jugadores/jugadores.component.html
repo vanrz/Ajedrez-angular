@@ -1,33 +1,36 @@
-<h2>{{jugador1.Jugador1 | uppercase}} </h2>
-<div><span>Turno: </span>{{jugador1.Turno}}</div>
+<h2>{{jugador1.jugador | uppercase}} </h2>
+<div><span>Turno: </span>{{jugador1.turno}}</div>
 <div>
     <label>
         Nombre de jugador1:
-   <input [(ngModel)]="jugador1.Jugador1" placeholder="Jugador1">
+        <input [(ngModel)]="jugador1.jugador" placeholder="Jugador1">
 
     </label>
 </div>
 
-<h2>{{jugador2.Jugador2 | uppercase}}</h2>
-<div><span>Turno: </span>{{jugador2.Turno}}</div>
+<h2>{{jugador2.jugador | uppercase}}</h2>
+<div><span>Turno: </span>{{jugador2.turno}}</div>
 <div>
     <label>
-        Nombre de Jugador 
-   <input [(ngModel)]="jugador2.Jugador2" placeholder="Jugador2">
+        Nombre de Jugador
+        <input [(ngModel)]="jugador2.jugador" placeholder="Jugador2">
 
     </label>
 </div>
 <br>
 <br>
 <br>
-<br>
-<br>
-<div style="text-align: center">
-<table id="tabAje" width="50%">
-    <tr *ngFor= "let fila of filas">
-        <td *ngFor="let celda of fila" class= {{celda}} >
-
-        </td>
-    </tr>
-</table>
+<div *ngIf="infoCargada" style="text-align:center">
+    <table id="tabAje" width="50%" style="margin:0  auto;" >
+        <tr *ngFor="let fila of filas">
+            <td (click)="seleccionarFicha(celda)" *ngFor="let celda of fila" class={{celda.clase}}>
+                <div>
+                    <p style="font-size: 150%;">
+                        {{ buscarFicha(celda) }}
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
+<h1 style="color:aqua" id="mov">{{recibidor}}</h1>
